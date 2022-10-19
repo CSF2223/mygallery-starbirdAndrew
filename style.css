@@ -1,7 +1,92 @@
 /*
-Color Palette:
-background color:  
-font color:        
-secondary color:   
-tertiary color:    
+Color Palette:     #F8485E
+background color:  #512D6D
+font color:        #00C1D4
+secondary color:   #F8485E
+tertiary color:    #EEEEEE
 */
+/*
+/*  CSS syntax notes: 
+      selector {property: Value;}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+html{
+    font-size: 62.5%;  /* Defult font size is -  62.5% of 16 is 10px - 
+    1 rem (relative unit) now will be equivalent to 10px} */
+}
+
+header{
+    margin: 0 4rem;
+    letter-spacing: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #826F66;
+    border-right: 1px solid #826F66;
+    border-left: 1px solid #826F66;
+    padding: 0.5rem;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4); 
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+body{ 
+    background-color: #512D6D; 
+    color: #00C1D4 ;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+cite {
+    font-size: 2rem;
+} 
+
+p {
+    font-size: 1.2rem;
+}
+
+.imageCard {
+    display: flex; 
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    margin: 7rem 4rem;
+} 
+
+.imageCard img {
+    width: 100%;
+    height: auto; 
+    border-radius: 30px; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);   
+} 
+
+.imageCard a{
+    text-decoration: none; 
+    color:#F8485E ;
+}
+
+.cardText {
+    color: #F8485E; 
+    background: transparent;
+    text-align: center; 
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 30px; 
+    margin-top: 2rem; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+} 
+
+@media (min-width: 768px) {
+
+.gallery { 
+    display: flex; 
+    flex-direction:row; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+} 
+
+.imageCard { 
+    max-width: 28%;
+} 
+}
+
